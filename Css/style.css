@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,200&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x:hidden;
+    
+}
+
+body{
+    background-color: black;
+}
+section{
+    padding: 5rem 9%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background:linear-gradient(130deg, red 93%, transparent 90%);
+    color: #fff;
+    cursor:pointer;
+    font-size: 1.7rem;
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    background-color: black;
+}
+
+.header .logo{
+    font-weight: bolder;
+    color:#fff;
+    font-size: 3rem;
+
+}
+
+.header .logo span{
+    color: red;
+}
+
+.header .navbar a{
+display: inline-block;
+padding: 1.5rem 2rem;
+font-size: 1.7rem;
+color: #fff;
+}
+
+.header .navbar a:hover{
+    color: red;
+}
+
+#menu-btn {
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    padding: 0;
+    margin-top: 6.5rem;
+}
+.home .slide {
+    width: 2rem 5%;
+
+}
+.home .slide .content{
+    width: 50rem;
+}
+.home .slide .content h3{
+    font-size: 3rem;
+}
+
+.slide{
+    min-height: 70vh;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+}
+.content{
+    width: 60rem;
+}
+
+.content span{
+    font-size: 2rem;
+    color: red;
+    display: block;
+}
+.content h3{
+    font-size: 5rem;
+    color:#fff;
+    padding: 1rem 0;
+}
+
+.swiper-pagination-bullet{
+    height: 2rem;
+    width: 2rem;
+    background:#fff;
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet-active{
+    background:red;
+
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+
+}
+
+.about .image{
+    flex: 1 1 42rem;
+    position: relative;
+
+}
+.about .image img{
+    width: 100%;
+    padding: 2rem;
+}
+
+.about .conteudo{
+    flex: 1 1 42rem;
+
+}
+.about .conteudo span{
+    font-size: 2rem;
+    color: red;
+
+    
+}
+
+.about .conteudo .title{
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+.about .conteudo p{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.2;
+}
+.about .conteudo .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 1rem;
+}
+
+
+.about .conteudo .box-container .box{
+    flex: 1 1 20rem;
+}
+
+.about .conteudo .box-container .box h3{
+    font-size: 1.5rem;
+    color:white;
+
+}
+.about .conteudo .box-container .box i{
+    padding-right: 1.5rem;
+    color:red;
+
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    top: 50% ; left:0;
+    transform: translateY(-50%);
+    height:0.1rem;
+    background:lightyellow;
+    z-index: -1;
+    width: 100%;
+
+}
+.heading span{
+    font-size: 3rem;
+    color: red;
+    background:black;
+    padding: 0.5rem 1.5rem;
+    border: 00.1rem solid lightyellow;
+    border-radius: 0.5rem;
+}
+
+
+.features .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding:10rem;
+    margin-left: 10rem;
+}
+.features .box-container .box{
+    background: black;
+    flex: 1 1 20rem;
+    
+}
+.features .box-container .box:hover .image img{
+    transform: scale(1.1);
+
+}
+
+.features .box-container .box .image{
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+
+}
+.features .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.features .content{
+    padding: 10rem;
+    text-align: center;
+    align-items: center;
+    
+
+}
+.features .content img{
+    height: 9rem;
+    margin-bottom: 1rem;
+}
+.features .content h3{
+    font-size: 2rem;
+    color: red;
+
+}
+.features .content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: lightyellow;
+    padding: 1rem 0;
+}
+
+.pricing{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.pricing .information span{
+    font-size: 2rem;
+    color: red;
+}
+
+.pricing .information h3{
+    font-size: 4rem;
+    color: white;
+    padding-top: 0.5rem;
+}
+
+.pricing .information p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: lightyellow;
+}
+.pricing .information i{
+    padding-right: 1rem;
+    color: red;
+}
+
+.pricing .plan{
+    text-align: center;
+    padding: 2rem;
+   
+
+}
+
+.pricing .plan h3{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color:white;
+}
+
+.pricing .plan .price{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: red;
+}
+.pricing .plan .price span{
+    color: white;
+    font-size: 2rem;
+}
+
+.pricing .plan .list{
+padding: 1rem 0;
+}
+
+.pricing .plan .list p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: lightyellow;
+
+}
+.pricing .plan .basic{
+    background-color: white;
+}
+
+
+.pricing .plan .list i{
+    padding-right: 1rem;
+    color: red;
+
+}
+.trainers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+
+}
+
+.trainers .box-container .box{
+    border:var(--border);
+
+
+}
+
+.trainers .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.trainers .box-container .box .image img{
+    height: 100%;
+  object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.trainers .box-container .box:hover .image img{
+ transform: scale(1.2);
+ 
+}
+
+.trainers .box-container .box .content{
+    padding: 2rem;
+}
+
+.trainers .box-container .box .content .title{
+    font-size:2.5rem ;
+    line-height: 1.5;
+    counter-reset: #fff;
+
+
+}
+.trainers .box-container .box .content span{
+    color: red;
+}
+
+.trainers .box-container .box .content .title:hover{
+    color: var(--main-color);
+}
+
+.trainers .box-container .box .content span{
+    color: var(--main-color);
+    display: block;
+    padding-top:1rem ;
+    font-size: 2rem;
+
+}
+
+.trainers .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#fff;
+    padding: 1rem 0;
+
+}
+
+.trainers .box-container .box .content a{
+    color: #fff;
+}
+
+.banner{
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../Fotos/banner.jfif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.banner span{
+    font-size: 2rem;
+    color: red;
+}
+.banner h3{
+    padding-top: 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.banner p{
+    margin: 1rem auto;
+    max-width: 60rem;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2;
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.review .information{
+    flex: 1 1 35rem;
+}
+
+.review .information span{
+    font-size: 2rem;
+    color: red;
+
+}
+
+.review .information h3{
+    font-size: 3rem;
+    color: white;
+    padding-top: 1rem;
+}
+.review .information p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: white;
+    padding: 1rem 0;
+}
+.review .review-slider{
+    flex: 1 1 60rem;
+    
+}
+
+.review .review-slider .slide{
+    background: linear-gradient(130deg, #1C1C1C 93%, transparent 90%);
+    padding: 2rem 3rem;
+     
+}
+.review .review-slider .slide p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: white;
+}
+.review .review-slider .slide .user{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+
+}
+.review .review-slider .slide .user img{
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.review .review-slider .slide .user h3{
+    font-size: 2rem;
+    color: white;
+}
+.review .review-slider .slide .user span{
+    font-size: 1.5;
+    color: red;
+}
+.review .review-slider .slide .user i{
+    font-size: 5rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    color: red;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+    justify-content: space-between;
+ 
+}
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: white;
+    padding: 1rem 0;
+
+
+}
+.footer .box-container .box .links{
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    padding: 1rem 0;
+}
+.footer .box-container .box .links:hover{
+    color: red;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+}
+.footer .box-container .box p:hover{
+    color: red;
+}
+
+.footer .box-container .box i{
+    padding-right: 0.5rem;
+    color: red;
+}
+
+.footer .box-container .share{
+    padding: 1rem 0;
+
+}
+
+.footer .box-container .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: white;
+    background: gray;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+.footer .box-container .share a:hover{
+    background:red;
+}
+
+.footer .box-container form .email {
+    margin-bottom: 1rem;
+    width: 100%;
+    background:lightgray;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: none;
+}
+
+
+ 
+
+
+
+
+@media (max-width:991px){
+
+html{
+    font-size: 55%;
+}
+.header{
+    padding: 0 2rem;
+}
+section{
+    padding: 3rem 2rem;
+}
+
+}
+
+
+@media (max-width:768px){
+    #menu-btn {
+        
+        display: inline-block;
+    }
+
+    .header{
+        padding: 2rem;
+
+    }
+    .navbar{
+        position:absolute;
+        top:99%; left: 0; right: 0;
+        background-color: black;
+    }
+    a{
+        display: block;
+        font-size: 2rem;
+    }
+
+}
+
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    }
